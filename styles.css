@@ -1,15 +1,19 @@
-header{
-    display: flex;
+*{
+    margin: 0;
+    padding: 0;
 }
 body{
-    margin: 0 0 0 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.125rem;
-    font-weight: 500;
-    background-color: hsl(193, 100%, 96%);
+    background-color: #ffff;
     background-image: url(./images/bg-hero-desktop.svg);
-    background-repeat: no-repeat;
     color: hsl(208, 11%, 55%);
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #ffff;
 }
 h1{
     font-family: 'Poppins', sans-serif;
@@ -21,208 +25,379 @@ h2{
     font-weight: 600;
     color: hsl(192, 100%, 9%);
 }
-.header-left{
-    padding: 1.5rem;
-}
-.header-right{
-    margin-left: auto;
+#header{
+    width: 100%;
     display: flex;
-    justify-content: center;
-    padding: 1.5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
 }
-.top-btn{
+#hbtn{
+    text-align: center;
     color: hsl(192, 100%, 9%);
-    font-weight: 700;
+    font-weight: 500;
+    font-weight: bold;
     font-family: 'Poppins', sans-serif;
     background-color: #ffff;
-    padding-top: 0.65rem;
-    text-align: center;
-    width: 11rem;
-    text-decoration: none;
-    -webkit-border-radius: 18.25;
-    -moz-border-radius: 18.25;
-    border-radius: 18.25rem;
+    -webkit-border-radius: 0.8;
+    -moz-border-radius: 0.8;
+    border-radius: 0.8rem;
     -webkit-box-shadow: 0 0.0625rem 0.5625rem black;
     -moz-box-shadow: 0 0.0625rem 0.5625rem black;
     box-shadow: 0 0.0625rem 0.5625rem black;
 }
-.top-btn:hover{
-    color: hsl(208, 11%, 55%);
-    text-decoration: none;
-}
-.top-container{
-    margin: 3.5rem 4.5rem 3.5rem 4.5rem;
-}
-.image-top{
-    width: 45rem;
-    float: right;
-}
-.main-text{
-    padding: 5.5rem 4.5rem 5.5rem 0;
-}
-.main-paragraph{
-    width: 28.5rem;
-}
-.card-btn-top{
-    width: 25rem;
-    padding-top: 1.5rem;
-}
-.main-btn{
+#loginbtn{
     background-color: hsl(322, 100%, 66%);
     text-decoration: none;
     color: hsl(193, 100%, 96%);
-    -webkit-border-radius: 18.25;
-    -moz-border-radius: 18.25;
-    border-radius: 18.25rem;
-    padding: 0.8rem 2.5rem 0.8rem 2.5rem;
-}
-.main-btn:hover{
-    opacity: 80%;
-    text-decoration: none;
-}
-.middle-container{
-    background-color: #ffff;
-    position: relative;
-    top: 5.5rem;
-    padding: 8.5rem 5.5rem 5.5rem 5.5rem;
-}
-.card-middle{
-    padding: 0.8rem;
-}
-.image-middle{
-    width: 25rem;
-}
-.mini-card{
-    background-color: #ffff;
-    height: 20rem;
-    padding: 2.5rem;
     -webkit-border-radius: 1;
     -moz-border-radius: 1;
     border-radius: 1rem;
-    -webkit-box-shadow: 0 0.01rem 0.4rem hsl(322, 41%, 76%);
-    -moz-box-shadow: 0 0.01rem 0.4rem hsl(322, 41%, 76%);
-    box-shadow: 0 0.01rem 0.4rem hsl(322, 41%, 76%);
 }
-.right-image{
-    float: right;
-}
-.left-image{
-    float: left;
-}
-.text-middle-right{
-    background-color: #ffff;
-    width: 30rem;
-    padding: 5.5rem;
-}
-.text-middle-left{
-    background-color: antiquewhite;
-    position: absolute;
-    left: 35rem;
-    width: 30rem;
-    padding: 5.5rem;
-    background-color: #ffff;
-}
-.card-bottom{
-    background-color: #ffff;
-    text-align: center;
-    width: 35rem;
-    position: relative;
-    left: 20rem;
-    top: 10rem;
-    padding-top: 2.5rem;
-    padding-bottom: 5.5rem;
-    -webkit-border-radius: 1;
-    -moz-border-radius: 1;
-    border-radius: 1rem;
-    -webkit-box-shadow: 0 0.01rem 0.4rem hsl(322, 41%, 76%);
-    -moz-box-shadow: 0 0.01rem 0.4rem hsl(322, 41%, 76%);
-    box-shadow: 0 0.01rem 0.4rem hsl(322, 41%, 76%);
-}
-.btn-bottom{
-    width: 15rem;
-    background-color: hsl(322, 100%, 66%);
-    text-decoration: none;
-    color: hsl(193, 100%, 96%);
-    -webkit-border-radius: 18.25;
-    -moz-border-radius: 18.25;
-    border-radius: 18.25rem;
-    padding: 1rem 5.5rem 1rem 5.5rem;
-    position: relative;
-    top: 1.5rem;
-}
-.btn-bottom:hover{
+#loginbtn:hover{
     opacity: 80%;
     text-decoration: none;
 }
-.footer-container{
+#body{
+    width: 100%;
+    background-color: #ffff;
+}
+#footer{
+    width: 100%;
     background-color: hsl(192, 100%, 9%);
-    height: 25rem;
-    padding-top: 15.5rem;
-    padding-left: 6.5rem;
-    padding-right: 7.5rem;
-    color: hsl(193, 100%, 96%);
 }
-.logo-footer{
-    width: 15rem;
-    height: 2rem;
-    padding-bottom: 1.5rem;
-    -webkit-filter: invert(53%) sepia(3%) saturate(1987%) hue-rotate(167deg) brightness(105%) contrast(78%); 
-    filter: invert(53%) sepia(3%) saturate(1987%) hue-rotate(167deg) brightness(105%) contrast(78%);
+#subtitle-title{
+    line-height: 1.3;
 }
-.card-footer{
+.cardbody{
+    background-color: #ffff;
+    -webkit-border-radius: 1;
+    -moz-border-radius: 1;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0 0.01rem 0.4rem hsl(322, 41%, 76%);
+    -moz-box-shadow: 0 0.01rem 0.4rem hsl(322, 41%, 76%);
+    box-shadow: 0 0.01rem 0.4rem hsl(322, 41%, 76%);
+}
+.p-body, #p-title{
+    line-height: 1.2;
+}
+#cardregist{
+    background-color: #ffff;
     display: flex;
-    color: hsl(193, 100%, 96%);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-border-radius: 1;
+    -moz-border-radius: 1;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0 0.01rem 0.4rem hsl(322, 41%, 76%);
+    -moz-box-shadow: 0 0.01rem 0.4rem hsl(322, 41%, 76%);
+    box-shadow: 0 0.01rem 0.4rem hsl(322, 41%, 76%);
 }
-.left{
-    width: 50rem;
-    padding-right: 6.5rem;
-    margin-top: 0;
-    text-align: left;
-}
-
-.icon-footer{
-    width: 4%;
-}
-td{
-    vertical-align: top;
-}
-.desc-footer{
-    width: 45%;
-    padding-bottom: 1.5rem;
-}
-.middle-left{
-    width: 20rem;
-    padding-right: 1.5rem;
-    padding-top: 0;
-}
-.text-footer-left{
-    margin-top: 0;
-    text-decoration: none;
-}
-.link{
+#salebtn{
+    background-color: hsl(322, 100%, 66%);
     text-decoration: none;
     color: hsl(193, 100%, 96%);
+    -webkit-border-radius: 1;
+    -moz-border-radius: 1;
+    border-radius: 1rem;
 }
-.middle-right{
-    width: 20rem;
-    padding-right: 1.5rem;
+#logofooter{
+    filter: brightness(0) invert(1)
 }
-.right{
-    width: 20rem;
-    padding-right: 1.5rem;
+.flink{
+    display: block;
 }
 .link-media{
-    width: 2rem;
-    -webkit-filter: invert(53%) sepia(3%) saturate(1987%) hue-rotate(167deg) brightness(105%) contrast(78%); 
-    filter: invert(53%) sepia(3%) saturate(1987%) hue-rotate(167deg) brightness(105%) contrast(78%);
+    filter: brightness(0) invert(1)
 }
-.card-copyright{
-    text-align: right;
-    margin-top: 5rem;
-    font-size: smaller;
+#copyright{
+    font-size: small;
+    color: #ffff;
 }
-.attribution{
-    color: hsl(228, 45%, 44%);
-    font-size: 11px;
+#rcopyright{
+    padding-top: 5%;
+    font-size: small;
     text-align: center;
+    color: #ffff;
+}
+@media(min-width:450px){
+    #header, #title, #body, #footer{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #header, #body{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    #himg{
+        width: 20%;
+    }
+    #hbtn{
+        width: 8%;
+        padding: 1% 3%;
+    }
+    #title{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #timage{
+        width: 50%;
+    }
+    #textitle{
+        width: 50%;
+        padding-right: 5%;
+        text-align: left;
+    }
+    #subtitle-title{
+        margin-bottom: 3%;
+        width: 50%;
+    }
+    #p-title{
+        width: 65%;
+        margin-bottom: 5%;
+    }
+    #loginbtn{
+        padding: 0.5% 8%;
+    }
+    #body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardbody{
+        width: 80%;
+        padding: 5%;
+        margin: 5% 0;
+    }
+    .right{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .left{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagebody, .textbody{
+        width: 50%;
+    }
+    .rtext{
+        padding-right: 5%;
+    }
+    .ltext{
+        padding-left: 5%;
+    }
+    .p-body{
+        width: 78%;
+    }
+    #cardregist{
+        width: 50%;
+        padding: 5% 0;
+        font-size: x-large;
+        position: relative;
+        top: 10rem;
+    }
+    #salebtn{
+        padding: 0.3% 15%;
+    }
+    #footer{
+        padding-top: 15%;
+        padding-bottom: 2%;
+    }
+    #logofooter{
+        width: 20%;
+    }
+    #minifooter{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .cardfooter{
+        width: 20%;
+        margin-top: 2%;
+    }
+    #table{
+        width: 40%;
+    }
+    table{
+        width: 70%;
+    }
+    td{
+        vertical-align: top;
+        line-height: 1.5;
+        padding-bottom: 5%;
+    }
+    .td1{
+        width: 10%;
+    }
+    .icon{
+        width: 50%;
+        vertical-align: top;
+    }
+    .flink{
+        padding-bottom: 6%;
+    }
+    .link-media{
+        width: 2rem;
+        padding-right: 2%;
+    }
+    #copyright{
+        padding-top: 5%;
+        text-align: right;
+    }
+    #rcopyright{
+        padding-top: 5%;
+        font-size: small;
+        text-align: center;
+    }
+}
+@media(max-width: 450px){
+    body{
+        background-image: url(./images/bg-hero-mobile.svg);
+    }
+    #header{
+        padding: 5%;
+    }
+    #himg{
+        width: 40%;
+    }
+    #hbtn{
+        width: 30%;
+        padding: 1% 2%;
+    }
+    #title{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 5%;
+    }
+    #timage{
+        width: 100%;
+    }
+    #textitle{
+        text-align: center;
+        width: 90%;
+    }
+    #t-btn{
+        margin: 5% 0;
+    }
+    #loginbtn{
+        padding: 0.5% 8%;
+    }
+    #subtitle-title, #p-title{
+        margin: 2% 0;
+    }
+    #body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+    }
+    .cardbody, .left, .right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5% 0;
+        margin: 10% 0;
+    }
+    .imagebody{
+        width: 50%;
+    }
+    .textbody{
+        width: 90%;
+    }
+    .textbody{
+        padding-top: 3%;
+    }
+    .rtext, .ltext{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .p-body{
+        width: 100%;
+    }
+    #cardregist{
+        width: 80%;
+        padding: 10% 3%;
+        position: relative;
+        top: 5rem;
+    }
+    #salebtn{
+        padding: 0.3% 10%;
+    }
+    #titlebtn{
+        font-size: medium;
+    }
+    #footer{
+        padding: 20% 5% 5% 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    #logofooter{
+        width: 43%;
+        margin-top: 10%;
+    }
+    #minifooter{
+        margin-top: 8%;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .cardfooter{
+        width: 100%;
+    }
+    #table{
+        width: 100%;
+    }
+    table{
+        width: 90%;
+    }
+    td{
+        line-height: 1.8;
+        vertical-align: top;
+        padding-bottom: 5%;
+    }
+    .td1{
+        width: 10%;
+    }
+    .icon{
+        width: 50%;
+    }
+    #cardlink{
+        margin-top: 10%;
+    }
+    .flink{
+        margin: 1% 0;
+    }
+    .ficon{
+        margin-top: 3%;
+        text-align: center;
+    }
+    .link-media{
+        width: 5%;
+        margin: 0;
+    }
+    #copyright{
+        padding: 0;
+        text-align: center;
+    }
 }
